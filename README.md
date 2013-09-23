@@ -42,7 +42,7 @@ That's cool but what if you have Author modelled as a sub class?
         
         public string LastName { get; set; }
     }
-No problem use WithKnownType()
+No problem, use AddKnownType()
 
     var sampleBooks = new DataSampler<Book>()
             .AddPropertyConfiguration(x => x.Id, () => 1)
