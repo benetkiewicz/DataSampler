@@ -47,7 +47,7 @@
             var propList = type.GetProperties();
             foreach (var propertyInfo in propList)
             {
-                string key = string.IsNullOrEmpty(parentPropertyFullName) ? propertyInfo.Name : string.Format(CultureInfo.InvariantCulture, "{0}.{1}", parentPropertyFullName, propertyInfo.Name, CultureInfo.InvariantCulture);
+                string key = string.IsNullOrEmpty(parentPropertyFullName) ? propertyInfo.Name : string.Format(CultureInfo.InvariantCulture, "{0}.{1}", parentPropertyFullName, propertyInfo.Name);
                 if (this.dataGenerators.ContainsKey(key))
                 {
                     Func<object> typeSampleGenerator = this.dataGenerators[key];
