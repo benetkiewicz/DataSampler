@@ -57,6 +57,19 @@
         }
 
         [Test]
+        public void UnknownSubTypePropertyShouldRemainNull()
+        {
+            var result = new DataSampler<Model>()
+                .AddPropertyConfiguration(x => x.Foo, () => 1)
+                .AddPropertyConfiguration(x => x.Sub.SubFoo, () => 2)
+                .GenerateListOf(2);
+            Assert.IsNotNull(result);
+            Assert.AreEqual(2, result.Count);
+            Assert.AreEqual(1, result[0].Foo);
+            Assert.IsNull(result[0].Sub);
+        }
+
+        [Test]
         public void SimpleInitializerOutOfScopeShouldWork()
         {
             int i = 0;
