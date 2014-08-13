@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>DevProductivity_DataTools_DataSampler</id>
+        <version>1.0.0</version>
+        <title>Sample Data Generator</title>
+        <authors>Piotr Benetkiewicz</authors>
+        <projectUrl>https://github.com/piotratais/DataSampler</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Robust library that generates sample data for your model in a breeze.</description>
+        <releaseNotes>Initial release.</releaseNotes>
+    </metadata>
+</package>
