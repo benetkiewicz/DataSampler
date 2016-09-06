@@ -5,6 +5,7 @@ __DataSampler__ is a simple framework that will get you up to speed while learni
 ## Usage
 Suppose you want to learn how Knockout.JS data binding works with ASP.NET MVC WebAPI. You have the following class to play with.
 
+```csharp
     class Book
     {
         public int Id { get; set; }
@@ -15,6 +16,7 @@ Suppose you want to learn how Knockout.JS data binding works with ASP.NET MVC We
         
         public DateTime ReleaseDate { get; set; }
     }
+```
 
 Now instead of worrying how to create a dozen of fake Books, you can simply write the following:
 
